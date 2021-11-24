@@ -25,7 +25,7 @@
                 android:gravity="center"
                 android:layout_marginTop="20dp"
 
-                android:text="Propinas Pizza Italiana"
+                android:text="Calcular Propinas"
                 android:textColor="#000000"
                 android:textSize="26sp" />
 
@@ -242,23 +242,102 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="70dp"
                 android:layout_marginLeft="70dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="70dp"
                 android:layout_marginRight="70dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="30dp"
                 android:fontFamily="@font/aclonica"
+                android:onClick="calcularPorcentajes"
                 android:text="Calcular"
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:backgroundTint="#FF9800" />
 
-            <ImageView
-                android:id="@+id/imageView2"
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="250dp"
-                app:srcCompat="@drawable/pngegg" />
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:text="A cada mesero le tocan:"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:text="0.0"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:text="A cada cocinero le toca:"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:text="0.0"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:text="A la pizzeria le toca:"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/aclonica"
+                        android:textSize="13sp"
+                        android:text="0.0"
+                        android:textColor="#000000" />
+                </TableRow>
+
+            </TableLayout>
 
         </LinearLayout>
 
